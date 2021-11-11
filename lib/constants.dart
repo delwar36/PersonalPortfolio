@@ -16,8 +16,8 @@ const kSocialIcons = [
 
 const kSocialLinks = [
   "https://www.facebook.com/delwarh.543",
-  "https://instagram.com/delwar36",
-  "https://twitter.com/delwar36",
+  "https://www.instagram.com/delwar_543",
+  "https://twitter.com/delwar543",
   "https://linkedin.com/in/delwar36",
   "https://github.com/delwar36",
   "https://delwar36.medium.com"
@@ -35,9 +35,9 @@ final kCommunityLogo = [
 ];
 
 final kCommunityLinks = [
-  "https://www.comsats.edu.pk/",
-  "https://web.facebook.com/FlutterIslamabadPakistan/",
-  "https://dsc.community.dev/comsats-university-islamabad/"
+  "https://www.sust.edu//",
+  "https://flutter.dev/",
+  "https://flutter.dev/community"
 ];
 
 // Tools & Tech
@@ -89,9 +89,9 @@ final kServicesDescriptions = [
 ];
 
 final kServicesLinks = [
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://www.fiverr.com/hamza6shakeel/get-you-modern-ui-design-using-adobe-xd",
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
+  "https://www.fiverr.com/delwar36/be-your-mobile-app-developer-via-flutter",
+  "https://www.fiverr.com/delwar36/get-you-modern-ui-design-using-adobe-xd",
+  "https://www.fiverr.com/delwar36/be-your-mobile-app-developer-via-flutter",
   "https://delwar36.medium.com",
   "https://github.com/delwar36"
 ];
