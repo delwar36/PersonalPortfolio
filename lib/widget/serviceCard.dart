@@ -5,19 +5,18 @@ import 'package:folio/constants.dart';
 import 'package:folio/provider/themeProvider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class ServiceCard extends StatefulWidget {
-  final String serviceIcon;
-  final String serviceTitle;
-  final String serviceDescription;
-  final String serviceLink;
-  final double cardWidth;
-  final double cardHeight;
-  final Widget cardBack;
+  final String? serviceIcon;
+  final String? serviceTitle;
+  final String? serviceDescription;
+  final String? serviceLink;
+  final double? cardWidth;
+  final double? cardHeight;
+  final Widget? cardBack;
 
   const ServiceCard({
-    @required this.serviceIcon,
+    required this.serviceIcon,
     this.serviceTitle,
     this.serviceDescription,
     this.serviceLink,
@@ -37,7 +36,7 @@ class _ServiceCardState extends State<ServiceCard> {
   Widget build(BuildContext context) {
     final _themeProvider = Provider.of<ThemeProvider>(context);
     double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
+    // double width = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: () {},
       onHover: (isHovering) {
@@ -45,12 +44,12 @@ class _ServiceCardState extends State<ServiceCard> {
           setState(() {
             isHover = true;
           });
-          cardKey.currentState.toggleCard();
+          cardKey.currentState!.toggleCard();
         } else {
           setState(() {
             isHover = false;
           });
-          cardKey.currentState.toggleCard();
+          cardKey.currentState!.toggleCard();
         }
       },
       child: FlipCard(
@@ -122,14 +121,14 @@ class _ServiceCardState extends State<ServiceCard> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                widget.serviceIcon,
+                widget.serviceIcon!,
                 height: height * 0.125,
               ),
               SizedBox(
                 height: height * 0.02,
               ),
               Text(
-                widget.serviceTitle,
+                widget.serviceTitle!,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
                   fontSize: height * 0.022,

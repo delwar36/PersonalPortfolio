@@ -82,7 +82,7 @@ class AboutDesktop extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border(
                             bottom:
-                                BorderSide(color: Colors.grey[800], width: 2.0),
+                                BorderSide(color: Colors.grey[800]!, width: 2.0),
                           ),
                         ),
                       ),
@@ -112,7 +112,7 @@ class AboutDesktop extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border(
                             bottom:
-                                BorderSide(color: Colors.grey[800], width: 2.0),
+                                BorderSide(color: Colors.grey[800]!, width: 2.0),
                           ),
                         ),
                       ),
@@ -153,7 +153,7 @@ class AboutDesktop extends StatelessWidget {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                    color: Colors.grey[900], width: 2.0),
+                                    color: Colors.grey[900]!, width: 2.0),
                               ),
                             ),
                           ),

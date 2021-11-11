@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:folio/provider/themeProvider.dart';
 import 'package:provider/provider.dart';
-import 'package:universal_html/html.dart' as html;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/animations/entranceFader.dart';
@@ -202,7 +201,7 @@ class _MainPageState extends State<MainPage> {
           );
   }
 
-  Widget _appBarTabDesktop(ThemeProvider _themeProv) {
+  PreferredSizeWidget _appBarTabDesktop(ThemeProvider _themeProv) {
     return AppBar(
       elevation: 0.0,
       backgroundColor: _themeProv.lightTheme ? Colors.white : Colors.black,
@@ -344,15 +343,15 @@ class _MainPageState extends State<MainPage> {
 }
 
 class SectionsBody extends StatelessWidget {
-  final ScrollController scrollController;
-  final int sectionsLength;
+  final ScrollController? scrollController;
+  final int? sectionsLength;
   final Widget Function(int) sectionWidget;
 
   const SectionsBody({
-    Key key,
+    Key? key,
     this.scrollController,
     this.sectionsLength,
-    this.sectionWidget,
+    required this.sectionWidget,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {

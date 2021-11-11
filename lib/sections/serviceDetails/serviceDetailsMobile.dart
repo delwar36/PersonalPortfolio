@@ -9,10 +9,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class ServiceDetailsMobile extends StatefulWidget {
-  final String serviceTitle;
-  final String serviceDesc;
+  final String? serviceTitle;
+  final String? serviceDesc;
 
-  const ServiceDetailsMobile({Key key, this.serviceTitle, this.serviceDesc})
+  const ServiceDetailsMobile({Key? key, this.serviceTitle, this.serviceDesc})
       : super(key: key);
 
   @override
@@ -27,7 +27,7 @@ class _ServiceDetailsMobileState extends State<ServiceDetailsMobile> {
     final _themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        title: AdaptiveText(widget.serviceTitle),
+        title: AdaptiveText(widget.serviceTitle!),
       ),
       backgroundColor: _themeProvider.lightTheme ? Colors.white : Colors.black,
       body: SingleChildScrollView(
@@ -102,7 +102,7 @@ class _ServiceDetailsMobileState extends State<ServiceDetailsMobile> {
                     color: kPrimaryColor,
                   ),
                   AdaptiveText(
-                    widget.serviceTitle,
+                    widget.serviceTitle!,
                     style: GoogleFonts.montserrat(
                       fontSize: 28.0,
                       fontWeight: FontWeight.bold,
@@ -115,7 +115,7 @@ class _ServiceDetailsMobileState extends State<ServiceDetailsMobile> {
                 ],
               ),
               AdaptiveText(
-                widget.serviceDesc,
+                widget.serviceDesc!,
                 style: GoogleFonts.montserrat(
                   height: 2.0,
                   color:

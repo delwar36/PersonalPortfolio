@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/animations/bottomAnimation.dart';
@@ -159,7 +161,7 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
                                   isExpanded: true,
                                   onChanged: (value) {
                                     setState(() {
-                                      _projectType = value;
+                                      _projectType = value.toString();
                                     });
                                   },
                                   items: projectType
@@ -211,7 +213,7 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
                                   isExpanded: true,
                                   onChanged: (value) {
                                     setState(() {
-                                      _database = value;
+                                      _database = value.toString();
                                     });
                                   },
                                   items: database
@@ -263,7 +265,7 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
                                   isExpanded: true,
                                   onChanged: (value) {
                                     setState(() {
-                                      _estBudget = value;
+                                      _estBudget = value.toString();
                                     });
                                   },
                                   items: estBudget
@@ -340,7 +342,7 @@ class _GetInTouchDesktopState extends State<GetInTouchDesktop> {
                                   isExpanded: true,
                                   onChanged: (value) {
                                     setState(() {
-                                      _projectDuration = value;
+                                      _projectDuration = value.toString();
                                     });
                                   },
                                   items: projectDuration

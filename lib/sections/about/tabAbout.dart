@@ -75,7 +75,7 @@ class AboutTab extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               border: Border(
-                bottom: BorderSide(color: Colors.grey[900], width: 2.0),
+                bottom: BorderSide(color: Colors.grey[900]!, width: 2.0),
               ),
             ),
           ),
@@ -107,7 +107,7 @@ class AboutTab extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               border: Border(
-                bottom: BorderSide(color: Colors.grey[900], width: 2.0),
+                bottom: BorderSide(color: Colors.grey[900]!, width: 2.0),
               ),
             ),
           ),
@@ -169,7 +169,7 @@ class AboutTab extends StatelessWidget {
                 width: width * 0.05,
                 decoration: BoxDecoration(
                   border: Border(
-                    bottom: BorderSide(color: Colors.grey[900], width: 2.0),
+                    bottom: BorderSide(color: Colors.grey[900]!, width: 2.0),
                   ),
                 ),
               ),
